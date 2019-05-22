@@ -1,0 +1,6 @@
+logs
+.DS_Store
+nohup.out
+data/jenkins/*
+!data/jenkins/.gitkeep
+
