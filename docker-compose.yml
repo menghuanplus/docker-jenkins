@@ -11,4 +11,3 @@ services:
             - '50000:50000'
         volumes:
             - './data/jenkins:/var/lib/jenkins'
-    # other services

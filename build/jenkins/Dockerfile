@@ -11,8 +11,8 @@ RUN buildDeps='software-properties-common python-software-properties git libtool
     apt-get clean && apt-get update --fix-missing && apt-get install -y python python3.5 python-pkg-resources $buildDeps && \
     add-apt-repository ppa:chris-lea/node.js && add-apt-repository ppa:openjdk-r/ppa && \
     wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add - && \
-    apt-get install -y openjdk-8-jdk nodejs nodejs-legacy npm && npm install --global gulp && \
-    apt-get install -y --force-yes jenkins && npm install -g cnpm --registry=http://registry.cnpmjs.org
+    apt-get install -y openjdk-8-jdk && \
+    apt-get install -y --force-yes jenkins 
 
 WORKDIR /
 EXPOSE 8080
